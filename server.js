@@ -1,10 +1,9 @@
 //import modules
 let express = require('express')
 let bodyparser = require('body-parser')
-let cors = require("cors")
+let cors = require('cors')
 //create rest object
 let app = express()
-app.use(cors)
 //set JSON as MIME type
 app.use(bodyparser.json())
 //client encoding form data to json
