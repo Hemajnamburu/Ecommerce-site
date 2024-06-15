@@ -7,7 +7,8 @@ let app = express()
 app.use(cors)
 //set JSON as MIME type
 app.use(bodyparser.json())
-client encoding form data to jsonapp.use(bodyparser.urlencoded({ extended: false }))
+//client encoding form data to json
+app.use(bodyparser.urlencoded({ extended: false }))
 //enable CORS -> Cross Origine Resource Sharing -> communication among various ports
 app.use(cors())
 //import login module
